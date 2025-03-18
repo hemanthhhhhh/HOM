@@ -15,26 +15,6 @@
     align-items: center;
 }
 
-.f-container .title {
-    color: white;
-}
-
-.f-container .emailbox {
-    max-width: 36rem;
-}
-
-.f-container hr {
-    border-color: var(--border-color-light);
-    width: 100%;
-}
-
-.f-menu {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
 .f-menu span {
     color: white;
     text-transform: uppercase;

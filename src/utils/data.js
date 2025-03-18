@@ -61,81 +61,17 @@ export const HeroData = [
   export const ourDiffFeatures = [
     {
       icon: "/OurDiff/Frame-0.png",
-      title: "Data Driven",
-      des: "Our mission is to level the playing field for early stage growth capital. We provide capital that is unbiased, flexible and non dilutive with the execution support to accelerate value creation",
+      title: "Basic ($15)",
+      des: "Limited Access, 100 API calls per day, 100MB Storage, 1 User, 1 Project",
     },
     {
       icon: "/OurDiff/Frame-1.png",
-      title: "flexible funding",
-      des: "Funding that flexes as revenue grows with transparent costs and does not require dilution, personal guarantees or pitch decks",
+      title: "Intermediate ($25)",
+      des: "Unlimited Access, Unlimited API calls, Unlimited Storage, 10 Users, 10 Projects",
     },
     {
       icon: "/OurDiff/Frame-2.png",
-      title: "value accelerating",
-      des: "On demand expertise to supercharge growth in areas that are hard to access for early stage founders",
-    },
-  ];
-  
-  export const hitFeatures = [
-    {
-      icon: "/howItWorks/Frame-0.png",
-      title: "Connect",
-      des: "Register and qualify for funding in less than 5 mins. Connect revenue and marketing platforms you already use.",
-    },
-    {
-      icon: "/howItWorks/Frame-1.png",
-      title: "Get Funded",
-      des: "Get a term sheet with upto 3 funding offers. Select option that best suits and complete onboarding to receive funds in days",
-    },
-    {
-      icon: "/howItWorks/Frame-2.png",
-      title: "Support Growth",
-      des: "Access curated feed of actionable insights and on demand execution expertise. Auto qualify for follow on funding as you grow",
-    },
-  ];
-  
-  export const whoWeInvest = [
-    {
-      title: "Digital Business Model",
-      des: "Digital business model e.g. SaaS, subscription, D2C, apps",
-    },
-    {
-      title: "Revenue Generating",
-      des: "Revenue generating for 6 months, > $1k in monthly recurring revenue",
-    },
-    {
-      title: "Support Growth",
-      des: "Industry expertise: Fintech, Health, Deep tech, B2B software",
-    },
-    {
-      title: "International Expansion",
-      des: "Registered in Australia and Singapore (initially) with appetite for international expansion",
-    },
-  ];
-  
-  export const testimonialsData = [
-    {
-      comment:
-        "SUPER HAPPY! Not only do you get to see the best seed and Early Stage companies but the exciting part is there’s a bunch of investors",
-      name: "Zach Lee",
-      profession: "QA specialist, Matrix architect",
-    },
-    {
-      comment:
-        "I have been working with ZAINKEEPSCODE on our fundraising strategies. They understands the in depth strategies of Venture Capital and early stage fund raising/company",
-      name: "Cheryl R. Weiss",
-      profession: "Founder, Dubrow Cafeteria",
-    },
-    {
-      comment:
-        "Another masterpiece really digging into the art of venture funds, portfolio construction and deal mechanics! Loved it - I can say without hesitation that it is incredibly valuable for anyone who is investing",
-      name: "Vicky R. Lane",
-      profession: "Directork, Lafayette Radio",
-    },
-    {
-      comment:
-        "BlueVenture is the premier setting for entrepreneurs and investors alike to exchange ideas, and network. As an entrepreneur, I can rely on the BlueVenture to bring top caliber speakers, entrepreneurs and investors",
-      name: "Jennifer Dubois",
-      profession: "Manager, China Coast",
+      title: "Advanced ($35)",
+      des: "Unlimited Access, Unlimited API calls, Unlimited Storage, Unlimited Users, Unlimited Projects",
     },
   ];

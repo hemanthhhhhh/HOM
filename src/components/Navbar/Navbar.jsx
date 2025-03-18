@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { BiMenuAltRight } from 'react-icons/bi'
 import { RxCross2 } from 'react-icons/rx'
-import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
+import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -35,17 +35,12 @@ const Navbar = () => {
             <div className="n-right">
               <div className="n-menu">
                 <Link to="wwd-wrapper" spy={true} smooth={true}>
-                  <span>What we do</span>
+                  <span>Services</span>
                 </Link>
-                <Link to="hiw-wrapper" spy smooth offset={100}>
-                  <span>How it works</span>
+                <Link to="od-wrapper" spy smooth offset={100}>
+                  <span>Pricing Table</span>
                 </Link>
-                <Link to="wwi-wrapper" spy smooth>
-                  <span>When We Invest</span>
-                </Link>
-                {/* <span>Testimonial</span> */}
               </div>
-              <div className="fund-button">Get funded</div>
             </div>
           </div>
         </div>
@@ -70,25 +65,14 @@ const Navbar = () => {
               to="wwd-wrapper"
               spy={true}
               smooth={true}>
-              <span>What we do</span>
+              <span>Services</span>
             </Link>
             <Link onClick={() => setMenuOpened(false)}
-              to="hiw-wrapper"
-              spy
-              smooth
-              offset={100}>
-              <span>How it works</span>
-            </Link>
-            <Link onClick={() => setMenuOpened(false)}
-              to="wwi-wrapper"
+              to="od-wrapper"
               spy
               smooth>
-              <span>When We Invest</span>
+              <span>Pricing Table</span>
             </Link>
-            {/* <Link to="wwd-wrapper" spy={true} smooth={true}>
-              <span>Testimonial</span>
-            </Link> */}
-            <div className="m-funded-button">Get funded</div>
           </div>
         </div>
       </div>

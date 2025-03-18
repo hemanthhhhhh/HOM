@@ -1,12 +1,12 @@
 import React from 'react'
-import './OurDiff.css'
+import './PricingTable.css'
 import { motion, useAnimation } from 'framer-motion'
-import { features, ourDiffFeatures } from '@/utils/data'
+import { ourDiffFeatures } from '@/utils/data'
 import Image from 'next/image'
 import { containerVariants, desVariants, tagVariants, titleVariants } from '@/utils/animations'
 
-const OurDiff = () => {
-  const controls = useAnimation()
+const PricingTable = () => {
+  // const controls = useAnimation()
   return (
     <div className="od-wrapper">
       <div className="container">
@@ -19,13 +19,11 @@ const OurDiff = () => {
               variants={tagVariants}
               style={{
                 fontSize: '1.9rem',
-                // color: 'var(--title-color)',
-                // fontWeight: 'bold',
                 textAlign: 'center',
                 lineHeight: '3.5rem',
                 textTransform: 'capitalize'
               }}
-              className='tag'>Our Difference</motion.span>
+              className='tag'>Pricing Table</motion.span>
             <motion.span
               initial="offscreen"
               whileInView={"onscreen"}
@@ -38,7 +36,7 @@ const OurDiff = () => {
                 lineHeight: '3.5rem',
                 textTransform: 'capitalize'
               }}
-              className='title'>Fair capital, hassle free</motion.span>
+              className='title'>Fair Prices, More Output</motion.span>
             <motion.span
               initial="offscreen"
               whileInView={"onscreen"}
@@ -46,7 +44,7 @@ const OurDiff = () => {
               style={{
                 lineHeight: '2rem',
                 fontSize: '1.4rem',
-                // color: 'var(--text-color)'
+  
               }}
               className='text'>We provide capital that iss unbiased, flexible and non dilutive with the execution support to accelerate value creation</motion.span>
           </div>
@@ -86,4 +84,4 @@ const OurDiff = () => {
   )
 }
 
-export default OurDiff
+export default PricingTable

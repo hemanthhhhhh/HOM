@@ -6,9 +6,33 @@ import { motion } from 'framer-motion'
 import { containerVariants } from '@/utils/animations'
 
 const EmailBox = () => {
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "a7e17c0f-0f25-4edf-b5bf-79c49df80e28");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
-    <motion.div
-      initial={{ width: "0.5rem", borderRadius: "100%" }}
+    <motion.section
+    initial={{ width: "0.5rem", borderRadius: "100%" }}
       whileInView={{
         width: "70%", borderRadius: "999px",
         transition: {
@@ -16,43 +40,31 @@ const EmailBox = () => {
           duration: 1,
         },
       }}
-      className="emailbox">
-
-      {/* icon */}
-      <motion.div
+    className='contact'>
+      <form onSubmit={onSubmit}>
+        <h2>Contact Form</h2>
+        <div className="input-box">
+          <label>Full Name</label>
+          <input type="text" className='field' required placeholder='Enter your name' name='name' />
+        </div>
+        <div className="input-box">
+          <label>Email</label>
+          <input type="email" className='field' required placeholder='Enter your email' name='email' />
+        </div>
+        <div className="input-box">
+          <label>Message</label>
+          <textarea type="text" className='field-mess' required placeholder='Enter your message' name='message'></textarea>
+        </div>
+        <button
         initial="offscreen"
-        whileInView={"onscreen"}
-        viewport={{
-          once: true
-        }}
-        variants={containerVariants(0.6)}
-      >
-        <LuMail size={30} color='grey' />
-      </motion.div>
-
-      {/* input */}
-      <input
-        initial="offscreen"
-        whileInView={"onscreen"}
-        viewport={{
-          once: true
-        }}
-        variants={containerVariants(0.7)}
-        type="email"
-        placeholder='Enter email' />
-
-      {/* get funded button  */}
-      <div 
-      initial="offscreen"
-      whileInView={"onscreen"}
-      viewport={{
-        once : true
-      }}
-      variants={containerVariants(0.9)}
-      className="getFunded">
-        Get Funded
-      </div>
-    </motion.div>
+          whileInView={"onscreen"}
+          viewport={{
+            once : true
+          }}
+          variants={containerVariants(0.9)}
+        type='submit'>Send Message</button>
+      </form>
+    </motion.section>
   )
 }
 

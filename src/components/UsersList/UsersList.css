@@ -1,0 +1,20 @@
+.user-wrapper {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.user-conatiner {
+    padding: 40px;
+}
+
+.user-list {
+    background: rgb(231, 224, 224);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-name {
+    border-bottom: 2px;
+    padding: 10px;
+}

@@ -34,7 +34,6 @@ body {
   width: 100%;
   margin : auto;
   overflow: hidden;
-  /* background-color: red; */
 }
 
 @media (min-width: 2100px) {

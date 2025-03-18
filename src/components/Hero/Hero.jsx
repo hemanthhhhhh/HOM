@@ -1,9 +1,8 @@
 "use client"
 import React from 'react'
 import './Hero.css'
-import EmailBox from '../EmailBox/EmailBox'
 import { HeroData } from '@/utils/data'
-import {animate, motion} from 'framer-motion'
+import {motion} from 'framer-motion'
 
 const Hero = () => {
 
@@ -93,7 +92,6 @@ const Hero = () => {
                         </div>
 
                         <div className="h-des">Revenue based funding and execution support designed for early stage founders</div>
-                        <EmailBox/>
                     </div>
                 </div>
             </div>

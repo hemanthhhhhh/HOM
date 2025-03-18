@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import './WhatWeDo.css'
 import { features } from '@/utils/data'
@@ -22,7 +21,7 @@ const WhatWeDo = () => {
                                 fontSize: '1.5rem',
                                 fontWeight: 'bold'
                             }}
-                        >What We Do</motion.span>
+                        >Services</motion.span>
                         <motion.span
                             initial="offscreen"
                             whileInView={"onscreen"}
