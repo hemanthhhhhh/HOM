@@ -1,11 +1,11 @@
 "use client"
 import React from 'react'
 import './EmailBox.css'
-import { LuMail } from 'react-icons/lu'
 import { motion } from 'framer-motion'
 import { containerVariants } from '@/utils/animations'
 
 const EmailBox = () => {
+  const [result, setResult] = React.useState(null);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -56,6 +56,7 @@ const EmailBox = () => {
           <textarea type="text" className='field-mess' required placeholder='Enter your message' name='message'></textarea>
         </div>
         <button
+        onSubmit={onSubmit}
         initial="offscreen"
           whileInView={"onscreen"}
           viewport={{

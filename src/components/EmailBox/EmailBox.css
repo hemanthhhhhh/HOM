@@ -62,3 +62,41 @@ form button {
 form button:hover {
     background: #624ec6;
 }
+
+@media (max-width: 768px) {
+    .contact {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    .field, .field-mess {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .field, .field-mess {
+      font-size: 0.85rem;
+      padding: 6px;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
