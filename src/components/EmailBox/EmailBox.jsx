@@ -32,15 +32,22 @@ const EmailBox = () => {
 
   return (
     <motion.section
-    initial={{ width: "0.5rem", borderRadius: "100%" }}
-      whileInView={{
-        width: "70%", borderRadius: "999px",
-        transition: {
-          type: "easeOut",
-          duration: 1,
-        },
-      }}
-    className='contact'>
+    // initial={{ width: "0.5rem", borderRadius: "100%" }}
+    //   whileInView={{
+    //     width: "70%", borderRadius: "999px",
+    //     transition: {
+    //       type: "easeOut",
+    //       duration: 1,
+    //     },
+    //   }}
+    // className='contact'>
+  initial={{ width: "90%", borderRadius: "50px" }}
+  whileInView={{
+    maxWidth: "600px", borderRadius: "20px",
+    transition: { type: "easeOut", duration: 1 },
+  }}
+  className='contact'>
+
       <form onSubmit={onSubmit}>
         <h2>Contact Form</h2>
         <div className="input-box">
